@@ -1,0 +1,92 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #deeefc; /* Cor de fundo azul claro */
+}
+
+h1 {
+    text-align: center;
+    color: #0099ff; /* Título principal roxo */
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #ce7612; /* Subtítulo azul */
+    font-size: 1.8em;
+}
+
+p {
+    color: #333;
+    font-size: 1.2em;
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+    background-color: #db781a; /* Cor de fundo da navbar */
+    color: white; /* Cor do texto da navbar */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+.navbar a {
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+    margin: 0 15px; /* Espaçamento entre os links */
+    font-weight: bold; /* Torna os links em negrito */
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+
+.center-text {
+    text-align: center;
+    font-style: italic; /* Texto em itálico */
+    font-size: 1.5em;
+}
+
+.bold-text {
+    font-weight: bold; /* Texto em negrito */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos específicos para a imagem de perfil */
+.img-menor {
+    width: 200px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da altura */
+}
+
+
+a {
+    color: #ff4500; /* Links em laranja */
+}
+
+/* Estilos específicos para o curriculo.html */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilos específicos para outros.html */
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal;
+}

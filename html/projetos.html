@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outros Conteúdos</title>
+    <link rel="stylesheet" href="../style/style.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+    <div class="container"> <!-- Adiciona a div container -->
+        <h1>Meus Projetos</h1>
+        
+        <div class="navbar">
+            <a href="index.html">Início</a>
+            <a href="curriculo.html">Curriculo</a>
+            <a href="https://github.com/Advalker">GitHub</a>
+        </div>
+
+        
+        <h2>Projeto de Testes Automatizados com Behave e Selenium</h2>
+        <p>Este projeto implementa testes automatizados para o processo de login, verificação de mensagens de erro e logout no LinkedIn. Os testes são escritos em Python utilizando a biblioteca Behave para BDD (Behavior-Driven Development) e Selenium para automação de navegação na web.</p>
+
+        <h3>Pré-requisitos</h3>
+        <ul>
+            <li><strong>Python 3.x:</strong> Linguagem de programação usada para escrever os testes.</li>
+            <li><strong>pip:</strong> Gerenciador de pacotes do Python.</li>
+            <li><strong>Google Chrome:</strong> Navegador usado nos testes.</li>
+            <li><strong>ChromeDriver:</strong> Ferramenta que permite ao Selenium controlar o navegador Chrome.</li>
+        </ul>
+
+        <h3>Configuração do Ambiente</h3>
+        <ol>
+            <li>Clone este repositório:
+                <pre><code>git clone https://github.com/seu-usuario/seu-repositorio.git</code></pre>
+            </li>
+            <li>Navegue até o diretório:
+                <pre><code>cd seu-repositorio</code></pre>
+            </li>
+            <li>Instale as dependências do Python:
+                <pre><code>pip install -r requirements.txt</code></pre>
+            </li>
+            <li>Caso o arquivo requirements.txt não exista, instale as bibliotecas manualmente:
+                <pre><code>pip install behave selenium</code></pre>
+            </li>
+            <li>Baixe o ChromeDriver:
+                <ul>
+                    <li>Baixe a versão compatível com o seu navegador Chrome no site oficial do <a href="https://chromedriver.chromium.org/downloads" target="_blank">ChromeDriver</a>.</li>
+                    <li>Extraia o arquivo e adicione o caminho do executável <strong>chromedriver</strong> ao PATH do sistema.</li>
+                </ul>
+            </li>
+            <li>Crie o arquivo <strong>elementos.py</strong>:
+                <p>O arquivo <strong>elementos.py</strong> deve conter os seletores dos elementos HTML usados nos testes. Exemplo:</p>
+                <pre><code>
+URL_LINKDIN = "https://www.linkedin.com/login"
+CAMPO_EMAIL = "username"
+CAMPO_SENHA = "password"
+BTN_LOGIN = "//button[@type='submit']"
+IMG_MENU = "//img[@class='profile-rail-card__profile-photo']"
+TXT_CAPTURADO = "//div[@id='error-for-password']"
+                </code></pre>
+            </li>
+            <li>Configure suas credenciais:
+                <p>Insira suas credenciais de login e outros dados necessários no arquivo <strong>elementos.py</strong>:</p>
+                <pre><code>
+EMAIL = "seu_email@exemplo.com"
+SENHA = "sua_senha"
+EMAIL_ERRADO = "email_errado@exemplo.com"
+                </code></pre>
+            </li>
+        </ol>
+
+        <h3>Estrutura do Projeto</h3>
+        <ul>
+            <li><strong>features/:</strong> Diretório que contém os arquivos .feature onde os cenários de teste são descritos.</li>
+            <li><strong>pages/:</strong> Diretório que contém as classes de página (LoginPage) com os métodos que realizam ações específicas nos elementos HTML.</li>
+            <li><strong>features/steps/:</strong> Diretório que contém os arquivos .py que implementam os passos definidos nos arquivos .feature.</li>
+            <li><strong>features/elementos.py:</strong> Arquivo que contém todos os seletores de elementos HTML e variáveis de configuração usadas nos testes.</li>
+        </ul>
+
+        <h3>Executando os Testes</h3>
+        <p>Para executar os testes, utilize o comando:</p>
+        <pre><code>behave --tags="@TestLogin"</code></pre>
+
+        <p><a href="index.html">Voltar para a página principal</a></p>
+    </div>
+</body>
+</html>
